@@ -23,7 +23,9 @@ SELECT
 FROM 
     properties p
 LEFT JOIN 
-    reviews r ON p.property_id = r.property_id;
+    reviews r ON p.property_id = r.property_id
+ORDER BY 
+    p.property_name ASC, r.review_date DESC;
 
 
 SELECT 
